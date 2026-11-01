@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nexa Travel</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+
+    <header class="header" id="home">
+
+        <nav class="navbar">
+
+            <div class="logo">Nexa<span>Travel</span></div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+
+                ☰
+
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home" class="nav-link">Home</a></li>
+
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="hero">
+
+            <div class="hero-content">
+
+                <h1>Discover Your Next <span>Adventure</span></h1>
+
+                <p>Book curated trips to the world's most beautiful places with exclusive offers and flexible plans.</p>
+
+                <form class="search-form" id="searchForm">
+
+                    <div class="form-group">
+
+                        <label for="destinationInput">Destination</label>
+
+                        <input type="text" id="destinationInput" placeholder="Where do you want to go?" />
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="dateInput">Travel Date</label>
+
+                        <input type="date" id="dateInput" />
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="budgetInput">Budget ($)</label>
+
+                        <input type="number" id="budgetInput" placeholder="500" min="100" />
+
+                    </div>
+
+                    <button type="submit" class="btn-primary">Search Trips</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Popular Destinations -->
+
+    <section class="section" id="destinations">
+
+        <div class="section-header">
+
+            <h2>Popular Destinations</h2>
+
+            <p>Explore our most loved spots around the globe.</p>
+
+        </div>
+
+        <div class="cards-grid">
+
+            <article class="card destination-card" data-price="799">
+
+                <div class="card-image" style="background-image: url('https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg');"></div>
+
+                <div class="card-body">
+
+                    <h3>Paris, France</h3>
+
+                    <p>The city of lights, romance, and world-famous art and cuisine.</p>
+
+                    <div class="card-footer">
+
+                        <span class="price-tag">From $799</span>
+
+                        <button class="btn-outline book-btn">Book Now</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card destination-card" data-price="699">
+
+                <div class="card-image" style="background-image: url('https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg');"></div>
+
+                <div class="card-body">
+
+                    <h3>Bali, Indonesia</h3>
+
+                    <p>Golden beaches, lush rice terraces, and peaceful temples await.</p>
+
+                    <div class="card-footer">
+
+                        <span class="price-tag">From $699</span>
+
+                        <button class="btn-outline book-btn">Book Now</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card destination-card" data-price="599">
+
+                <div class="card-image" style="background-image: url('https://images.pexels.com/photos/3035998/pexels-photo-3035998.jpeg');"></div>
+
+                <div class="card-body">
+
+                    <h3>Dubai, UAE</h3>
+
+                    <p>Experience luxury, futuristic skylines, and thrilling desert safaris.</p>
+
+                    <div class="card-footer">
+
+                        <span class="price-tag">From $599</span>
+
+                        <button class="btn-outline book-btn">Book Now</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card destination-card" data-price="899">
+
+                <div class="card-image" style="background-image: url('https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg');"></div>
+
+                <div class="card-body">
+
+                    <h3>Swiss Alps, Switzerland</h3>
+
+                    <p>Snow-capped peaks, scenic railways, and charming alpine villages.</p>
+
+                    <div class="card-footer">
+
+                        <span class="price-tag">From $899</span>
+
+                        <button class="btn-outline book-btn">Book Now</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Packages -->
+
+    <section class="section section-alt" id="packages">
+
+        <div class="section-header">
+
+            <h2>Travel Packages</h2>
+
+            <p>Choose a plan that fits your style and budget.</p>
+
+        </div>
+
+        <div class="cards-grid packages-grid">
+
+            <article class="card package-card">
+
+                <h3>Budget Explorer</h3>
+
+                <p class="package-tagline">Perfect for students and solo travelers.</p>
+
+                <ul class="package-list">
+
+                    <li>3–4 star hotels</li>
+
+                    <li>Shared transport</li>
+
+                    <li>Guided city tour</li>
+
+                    <li>Free breakfast</li>
+
+                </ul>
+
+                <div class="package-footer">
+
+                    <span class="price-tag">$399</span>
+
+                    <button class="btn-primary book-btn">Choose Plan</button>
+
+                </div>
+
+            </article>
+
+            <article class="card package-card featured">
+
+                <div class="featured-label">Most Popular</div>
+
+                <h3>Comfort Getaway</h3>
+
+                <p class="package-tagline">Ideal for couples and small families.</p>
+
+                <ul class="package-list">
+
+                    <li>4–5 star hotels</li>
+
+                    <li>Private airport transfers</li>
+
+                    <li>2 guided tours</li>
+
+                    <li>Breakfast & dinner</li>
+
+                </ul>
+
+                <div class="package-footer">
+
+                    <span class="price-tag">$799</span>
+
+                    <button class="btn-primary book-btn">Choose Plan</button>
+
+                </div>
+
+            </article>
+
+            <article class="card package-card">
+
+                <h3>Luxury Escape</h3>
+
+                <p class="package-tagline">For those who love premium comfort.</p>
+
+                <ul class="package-list">
+
+                    <li>5 star resorts</li>
+
+                    <li>Chauffeur-driven car</li>
+
+                    <li>Custom private tours</li>
+
+                    <li>All meals included</li>
+
+                </ul>
+
+                <div class="package-footer">
+
+                    <span class="price-tag">$1299</span>
+
+                    <button class="btn-primary book-btn">Choose Plan</button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="section" id="gallery">
+
+        <div class="section-header">
+
+            <h2>Travel Gallery</h2>
+
+            <p>Get inspired by photos from our recent trips.</p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg');"></div>
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg');"></div>
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/210307/pexels-photo-210307.jpeg');"></div>
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg');"></div>
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg');"></div>
+
+            <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg');"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact / Booking -->
+
+    <section class="section section-alt" id="contact">
+
+        <div class="section-header">
+
+            <h2>Contact & Booking</h2>
+
+            <p>Send us your details and we’ll plan your dream vacation.</p>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <form class="contact-form" id="bookingForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nameInput">Full Name</label>
+
+                        <input type="text" id="nameInput" placeholder="Your name" required />
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="emailInput">Email</label>
+
+                        <input type="email" id="emailInput" placeholder="you@example.com" required />
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="phoneInput">Phone</label>
+
+                        <input type="tel" id="phoneInput" placeholder="+91 98765 43210" />
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="peopleInput">Travellers</label>
+
+                        <input type="number" id="peopleInput" min="1" value="1" />
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="destinationSelect">Preferred Destination</label>
+
+                    <select id="destinationSelect">
+
+                        <option value="">Select destination</option>
+
+                        <option value="Paris">Paris, France</option>
+
+                        <option value="Bali">Bali, Indonesia</option>
+
+                        <option value="Dubai">Dubai, UAE</option>
+
+                        <option value="Swiss Alps">Swiss Alps, Switzerland</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="messageInput">Additional Details</label>
+
+                    <textarea id="messageInput" rows="4" placeholder="Tell us about your ideal trip..."></textarea>
+
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Booking Request</button>
+
+                <p class="form-message" id="formMessage"></p>
+
+            </form>
+
+            <div class="contact-info">
+
+                <h3>Why Book With Us?</h3>
+
+                <ul>
+
+                    <li>✓ Handpicked hotels & experiences</li>
+
+                    <li>✓ 24/7 travel assistance</li>
+
+                    <li>✓ Easy rescheduling & refunds</li>
+
+                    <li>✓ Best price guarantee</li>
+
+                </ul>
+
+                <h4>Contact</h4>
+
+                <p>Email: support@nexatravel.com</p>
+
+                <p>Phone: +919899537126</p>
+
+                <p>Address: 21 Travel Street, New Delhi, India</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>© <span id="year"></span> Nexa travel Travel. All rights reserved.</p>
+
+    </footer>
+
+    <!-- Booking Modal -->
+
+    <div class="modal" id="bookingModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <h3>Quick Booking</h3>
+
+        <p id="modalDestinationText">You're booking a trip.</p>
+
+        <button class="btn-primary" id="modalGoToContact">Continue to Booking Form</button>
+
+    </div>
+
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Website JavaScript -->
+<script src="script.js"></script>
+
+<!-- EmailJS Booking JavaScript -->
+<script src="email.js"></script>
+
+</body>
+</html>
